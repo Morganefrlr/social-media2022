@@ -1,0 +1,64 @@
+.rightbar{
+    flex:2;
+    @include container;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    position: sticky;
+    top: 220px;
+    gap: 20px;
+    color: $fifth;
+    p{
+        text-transform: uppercase;
+    }
+    .actuUser{
+        display: flex;
+        gap: 50px;
+        width: 100%;
+        align-items: center;
+        .actuUserInfo{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            align-items: center;
+            p{
+                text-transform: none;
+                font-size: 15px;
+            }
+            span{
+                font-weight: 600;
+                font-size: 15px;
+                text-transform: none;
+                color: $fifth;
+            }
+            &_profil {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 50%;
+            } 
+        }
+        span {
+            font-weight: 300;
+            color: $fourth;
+            font-size: 12px;
+        }
+    }
+
+}
+
+.credit{
+    font-size: 8px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    width: 100%;
+    a{
+        //text-decoration: none;
+        color: $fifth;
+        cursor: pointer;
+    }
+}

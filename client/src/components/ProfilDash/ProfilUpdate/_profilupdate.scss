@@ -1,0 +1,163 @@
+.profilUpdate{
+    height: fit-content;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $first;
+    z-index: 999;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px lighten($fourth, 40);
+    form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        color: $fifth;
+        text-transform: uppercase;
+        background: transparent;
+    }
+    .update-close{
+        border: none;
+        width: 10%;
+        align-self: flex-end;
+        font-size: 20px;
+        font-weight: 600;
+        background: transparent;
+        cursor: pointer;
+        color: $fifth;
+        margin-top: 30px;
+    }
+    .update-close:active{
+        color: darken($third, 20);
+    }
+    span {
+        background: transparent;
+        align-self: center;
+        font-size: 40px;
+        font-weight: 200;
+    }
+    span:nth-child(1){
+        font-size: 20px;
+        text-decoration: underline;
+        font-weight: 400;
+    }
+    .update-input{
+        background: transparent;
+        display: flex;
+        flex-direction: column-reverse;
+        label{
+            background: transparent;
+            font-size: 12px;
+            align-self: center;
+            margin: 5px;
+        }
+        input{
+            height: 30px;
+            border: 0.5px solid $fifth;
+            border-radius: 5px;
+            padding: 2px;
+            outline: none;
+            opacity: 0.9;
+        }
+        input:focus{
+            outline: 1px solid $third;
+        }
+    }
+    .update-box-user{
+        display: flex;
+        flex-direction: row;
+        background: transparent;
+        width: 100%;
+        margin-top: 30px;
+        justify-content: space-evenly;
+        align-content: center;
+        img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        &_img{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            background: transparent;
+            gap: 10px;
+            margin: 10px;
+            label{
+                background: transparent;
+                font-size: 12px;
+            }
+            input{
+                background: transparent;
+            }
+        }
+        &_name{
+            background: transparent;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+    .update-box-info{
+        display: flex;
+        background: transparent;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 40px;
+        justify-content: space-evenly;
+        .update-input{
+            width: 40%;
+        }
+    }
+    .update-box-social{
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        margin: 10px;
+        margin-top: 30px;
+        .update-social{
+            display: flex;
+            flex-direction: row;
+            background: transparent;
+            margin: 10px;
+            gap: 40px;
+            width: 100%;
+            justify-content: center;
+            &_part{
+                width: 40%;
+                background: transparent;
+                margin: 20px;
+                margin-top: 0;
+                .update-input{
+                    margin-top: 20px;
+                }
+            }
+        }
+
+    }
+    .update-btn{
+        width: fit-content;
+        height: 40px;
+        padding: 5px;
+        border: 1px solid $third;
+        border-radius: 10px;
+        align-self: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .update-btn:hover{
+        background-color: $third;
+        color: $first;
+    }
+    .update-btn:active{
+        background-color: darken($third, 20);
+        color: $first;
+        border: none;
+        
+    }
+}

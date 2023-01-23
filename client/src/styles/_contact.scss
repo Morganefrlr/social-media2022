@@ -1,0 +1,54 @@
+.contactsNav{
+    @include container;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    top: 220px;
+    z-index: 1;
+    .bouton{
+        @include buttonWhite
+    }
+    .bouton:hover, .bouton:focus, .rouge{
+        background-color: $third;
+        color: $first;
+    }
+    
+}
+
+@keyframes contactContainer {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+.contactsContainer{
+    @include container;
+    animation: contactContainer 800ms both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    h1 {
+        background: transparent;
+        margin: 40px;
+
+    }
+    .contactsCards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: transparent;
+        height: 648px;
+        overflow: hidden;
+
+    }
+}

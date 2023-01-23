@@ -1,0 +1,96 @@
+.profilDash {
+    @include container;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 600px;
+    padding: 20px;
+    .profilImg{
+        width: 45%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+    .profilContainer{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .profilUser{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            color: $fifth;
+            margin: 20px;
+            .profilName{
+                font-size: 50px;
+                text-transform: uppercase;
+            }
+            .profilWork{
+                font-weight: 200;
+            }
+            .profilMail{
+                color: $fifth;
+            }
+        }
+        button{
+            @include buttonWhite;
+            min-width: none;
+            width: 200px;
+            height: 60px;
+            font-size: 16px;
+        }
+        button:hover, button:active {
+            background-color: $third;
+            color: $first;
+        }
+        .profilFriends{
+            @include friends;
+            margin-bottom: 20px;
+            
+        }
+        .profilSocialMedia{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            .icon{
+                font-size: 40px;
+            }
+
+            .valide{
+                color: $third;
+            }
+            .invalide{
+                color: $fourth;
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

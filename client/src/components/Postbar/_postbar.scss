@@ -1,0 +1,72 @@
+.inputPostbar{
+    @include container;
+    padding: 15px;
+    &_user {
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin: 10px;
+        align-items: center;
+        .input-profil{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover; 
+        }
+        textarea{
+            width: 90%;
+            border: none;
+ 
+        }
+        textarea:focus{
+            outline: 1px solid $third;
+        }
+        .file{
+            width: 100px;
+            height: 100px;
+            margin-right: 12px;
+            object-fit: cover;
+        }
+    }
+    &_bottom{
+        background-color: transparent;
+        display:flex ;
+        justify-content: space-between;
+        margin-right: 20px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+        button {
+            @include buttonWhite;
+            background-color: darken($third, 20);
+            color: $first;
+            border: none;
+        }
+        button:hover{
+            font-size: 13px;
+        }
+        button:active{
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .inputPostbar-icon{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .inputPostbar-item{
+            display: flex;
+            flex-direction: column;
+            font-size: 12px;
+            align-items: center;
+            margin-top: 16px;
+            margin-left: 16px;
+            .icon{
+                font-size: 22px;
+                color: darken($third, 20);
+                cursor: pointer;
+            }
+        }
+    }
+    
+}

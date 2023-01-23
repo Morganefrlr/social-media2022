@@ -1,0 +1,92 @@
+.comments{
+    display: flex;
+    flex-direction: column;
+    background-color: $first;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: all 5s ease;
+    .comment{
+        display: flex;
+        flex-direction: column;
+        .info{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .date{
+                margin-right: 40px;
+                font-size: 10px;
+                color: $fourth;
+            }
+        }
+        .commentText{
+            margin: 5px 50px;
+            font-size: 14px;
+            font-weight: 200;
+ 
+        }
+
+    }
+    .commentUser{
+        text-transform: uppercase;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: bold;
+        img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 10px;
+            object-fit: cover;
+        }
+    }
+    .comment-bottom{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        .icon{
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .icon:hover{
+            color: $third;
+        }
+        .icon:active{
+            color: darken($third, 20);
+        }
+    }
+    .inputComment{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        textarea{
+            margin-left: 5px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border: none;
+            width: 100%;
+            padding: 5px;
+            font-size: 16px; 
+        }
+        textarea:focus{
+            outline: 1px solid $third;
+        }
+        button {
+            @include buttonWhite;
+            min-width: 50px;
+            .sendIcon{
+                background: transparent;
+            }
+        }
+        button:hover, button:active{
+            background-color: $third;
+            .sendIcon{
+                color: $first;
+            }   
+        }
+    }
+}

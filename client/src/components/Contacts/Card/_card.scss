@@ -1,0 +1,43 @@
+.card{
+    @include container;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    align-items: center;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $fifth;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    a:focus{
+        color: $fifth;
+    }
+    &_bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 40%;
+        align-items: center
+    }
+    button {
+       @include buttonWhite;
+       width: 80%;
+       height: 30px;
+       margin: 5px 0;
+    }
+    button:hover, button:active{
+        background-color: $third;
+        color: $first;
+    }
+}
